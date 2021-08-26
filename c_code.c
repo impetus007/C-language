@@ -46,15 +46,43 @@
 
 
 // write a program to find maximum of any 2 integer using bu user
+// #include<stdio.h>
+// int main(){
+//     int a , b;
+//     printf("enter two values for compairing them : ");
+//     scanf("%d%d" , &a , &b);
+//     if(a>b){
+//         printf("maximum no is  :  %d" , a);
+//     }else{
+//          printf("maximum no is  :  %d" , b);
+//     }
+// return 0;
+// }
+
+
+
+// write a program to find the grater no in 3 input
 #include<stdio.h>
 int main(){
-    int a , b;
-    printf("enter two values for compairing them : ");
-    scanf("%d%d" , &a , &b);
+    int a , b , c , max=0; 
+    printf("Enter a 3 different no : ");
+    scanf("%d%d%d" , &a ,&b ,&c);
     if(a>b){
-        printf("maximum no is  :  %d" , a);
+        max =a ;
+        if(max>c){
+            printf("maximum no is  :  %d" , max);
+        }
+        else{
+            printf("maximum no is   : %d" , c);
+        }
     }else{
-         printf("maximum no is  :  %d" , b);
+        max=b;
+        if(max>c){
+            printf("maximum no is   : %d" , b);
+        }
+        else{
+            printf("Maximum no is   :%d" , c);
+        }
     }
 return 0;
 }
