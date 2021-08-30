@@ -62,27 +62,46 @@
 
 
 // write a program to find the grater no in 3 input
+// #include<stdio.h>
+// int main(){
+//     int a , b , c , max=0; 
+//     printf("Enter a 3 different no : ");
+//     scanf("%d%d%d" , &a ,&b ,&c);
+//     if(a>b){
+//         max =a ;
+//         if(max>c){
+//             printf("maximum no is  :  %d" , max);
+//         }
+//         else{
+//             printf("maximum no is   : %d" , c);
+//         }
+//     }else{
+//         max=b;
+//         if(max>c){
+//             printf("maximum no is   : %d" , b);
+//         }
+//         else{
+//             printf("Maximum no is   :%d" , c);
+//         }
+//     }
+// return 0;
+// }
+
+// aliter code of above question
 #include<stdio.h>
 int main(){
-    int a , b , c , max=0; 
-    printf("Enter a 3 different no : ");
-    scanf("%d%d%d" , &a ,&b ,&c);
-    if(a>b){
-        max =a ;
-        if(max>c){
-            printf("maximum no is  :  %d" , max);
-        }
-        else{
-            printf("maximum no is   : %d" , c);
-        }
-    }else{
-        max=b;
-        if(max>c){
-            printf("maximum no is   : %d" , b);
-        }
-        else{
-            printf("Maximum no is   :%d" , c);
-        }
+    int a, b,c , max;
+    printf("Enter any three no...%d");
+    scanf("%d%d%d" ,&a,&b ,&c);
+    if(a>b && a>c){
+        max=a;
     }
-return 0;
+    if(b>a && b>c){
+        max=b;
+    }else{
+        max=c;
+    }
+    printf("Maximum is ...%d" , max);
+    return 0;
+
 }
