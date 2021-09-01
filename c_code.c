@@ -88,20 +88,99 @@
 // }
 
 // aliter code of above question
+// #include<stdio.h>
+// int main(){
+//     int a, b,c , max;
+//     printf("Enter any three no...%d ");
+//     scanf("%d%d%d" ,&a,&b ,&c);
+//     if(a>b && a>c){
+//         max=a;
+//     }
+//     if(b>a && b>c){
+//         max=b;
+//     }
+//     if(c>a && c>b){
+//         max=c;
+//     }
+//     printf("Maximum is ...%d" , max);
+//     return 0;
+// }
+
+//nested if-else
+// #include<stdio.h>
+// int main(){
+//     int a, b,c;
+//     printf("Enter a three no.:%d");
+//     scanf("%d%d%d" , &a , &b ,&c);
+//     if(a>b){
+//         if(a>c)
+//         printf("Maximum is %d" , a);
+//         else
+//         printf("Maximum is %d" , b);
+//     }
+//     else{
+//         if(b>c)
+//         printf("Maximum is %d" , b);
+//         else
+//         printf("Maximum is %d" , c);
+//     }
+//     return 0;
+// }
+
+// #include<stdio.h>
+// int main(){
+//     char ch;
+//     int a;
+//     float x;
+//     printf("%u\n" , sizeof(a));
+//     printf("%u\n" , sizeof(ch));
+//     printf("%u\n" , sizeof(x));
+//     return 0;
+// }
+
+// #include<stdio.h>
+// int main(){
+//     char ch;
+//     int a;
+//     a=10;
+//     ch='T';
+//     printf("%d\t%c\n" , a , ch);
+//     printf("%d\n" , ch);
+//     return 0;
+// }
+
+// #include<stdio.h>
+// int main(){
+//     char ch;
+//     printf("Enter a Character\n");
+//     scanf("%c" , &ch);
+//     if(ch>='A' && ch<='Z')
+//     ch=ch+32;
+//     printf("%c\n" , ch);
+//     return 0;
+// }
+
 #include<stdio.h>
 int main(){
-    int a, b,c , max;
-    printf("Enter any three no...%d");
-    scanf("%d%d%d" ,&a,&b ,&c);
-    if(a>b && a>c){
-        max=a;
+    int n;
+    printf("Enter a single digit integer : ");
+    scanf("%d",&n);
+    switch (n)
+    {
+    case 1 : printf("one");
+        
+        case 2:
+        printf("two");
+        
+        case 3:
+        printf("three");
+        break;
+        case 4:
+        printf("four");
+        break;
+        default:
+        printf("none");
     }
-    if(b>a && b>c){
-        max=b;
-    }else{
-        max=c;
-    }
-    printf("Maximum is ...%d" , max);
     return 0;
-
 }
+
