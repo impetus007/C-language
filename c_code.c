@@ -160,27 +160,117 @@
 //     return 0;
 // }
 
+// #include<stdio.h>
+// int main(){
+//     int n;
+//     printf("Enter a single digit integer : ");
+//     scanf("%d",&n);
+//     switch (n)
+//     {
+//     case 1 : printf("one");
+//         break;
+//         case 2:
+//         printf("two");
+//         break;
+//         case 3:
+//         printf("three");
+//         break;
+//         case 4:
+//         printf("four");
+//         break;
+//         default:
+//         printf("none");
+//     }
+//     return 0;
+// }
+
+
+// #include<stdio.h>
+// int main(){
+//     int n , sum=0 , i=1;
+    
+//     scanf("%d" , &n);
+//     while(i<=n){
+//         sum=sum+i;
+//         i++;
+//         }
+//         printf("%d" ,sum);
+//         return 0;
+// }
+
+// #include<stdio.h>
+// int main(){
+//     int n , sum=0 , i=100;
+    
+//     scanf("%d" , &n);
+//     while(i<=999){
+//         sum=sum+i;
+//         i++;
+//         }
+//         printf("%d" ,sum);
+//         return 0;
+// }
+
+//For loop
+// for(expression1 ; expression2 ;expression3){
+
+// }
+
+// #include<stdio.h>
+// int main(){
+//     int i,j,k;
+//     i=1;
+//     while(i<=3){
+//         j=1;
+//         while(j<=3){
+//             k=i*j;
+//             printf("%d%d%d\n" , i , j , k);
+//             j++;
+//         }
+//         i++;
+//     }
+//     return 0;
+// }
+
+// #include<stdio.h>
+// int main(){
+//     int n;
+//     scanf("%d" , &n);
+//     for(int i=1;i<=n;i++){
+//         for(int j=1;j<=i;j++){
+//             printf("%d" , j);
+//         }
+//         printf(" \n");
+//     }
+//     return 0;
+// }
+
+// write a program to find maximum of n numbers
+// #include<stdio.h>
+// #include<math.h>
+// int main(){
+//     int a[100] , i , n , x , c[11];
+//     printf
+// }
+
+// Pointer
 #include<stdio.h>
 int main(){
-    int n;
-    printf("Enter a single digit integer : ");
-    scanf("%d",&n);
-    switch (n)
-    {
-    case 1 : printf("one");
-        
-        case 2:
-        printf("two");
-        
-        case 3:
-        printf("three");
-        break;
-        case 4:
-        printf("four");
-        break;
-        default:
-        printf("none");
+    int a ,b;
+    float x, y;
+    char ch;
+    int ar[10];
+    printf("address of a is %u\n" , &a);
+    printf("address of b is %u\n" , &b);
+    printf("address of x is %u\n" , &x);
+    printf("address of y is %u\n" , &y);
+    printf("address of ch is %u\n" , &ch);
+    for(int i=0;i<10;i++){
+        printf("address of ar[%d] is %u\n" , ar[i]);
     }
-    return 0;
 }
+
+
+
+
 
